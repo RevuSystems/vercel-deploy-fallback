@@ -1,0 +1,22 @@
+# Ignore large directories not needed for deployment
+/node_modules
+/.next
+/REPLIT LOGS FOR CHATGPT
+/cache
+/chatgpt-downloads
+/extracted_megablock
+/logs
+/megablocks
+/output
+/temp
+/uploads
+/attached_assets
+
+# Ignore environment files with secrets
+.env
+.env.*
+!.env.example
+
+# Ignore miscellaneous files
+*.log
+.DS_Store
