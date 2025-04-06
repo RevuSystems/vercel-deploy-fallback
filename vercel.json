@@ -1,5 +1,16 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": []
+  "redirects": [
+    {
+      "source": "https://www.revusystems.ca",
+      "destination": "https://revusystems.ca",
+      "permanent": true
+    },
+    {
+      "source": "https://www.revusystems.ca/(.*)",
+      "destination": "https://revusystems.ca/$1",
+      "permanent": true
+    }
+  ]
 }

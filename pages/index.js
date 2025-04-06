@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 export default function Home() {
-  const [isMounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+  const [isMounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
 
-  if (!isMounted) return null;
+  if (!isMounted) return null // ✨ Hydration-safe render
 
   return (
     <div className="p-10 text-center space-y-6">
@@ -20,6 +20,8 @@ export default function Home() {
         <Link href="/scrubber" className="block bg-gray-200 p-3 rounded">✨ Claim Scrubber v2</Link>
         <Link href="/rewrite" className="block bg-gray-200 p-3 rounded">📝 Clinical AI Rewrite</Link>
         <Link href="/recall" className="block bg-gray-200 p-3 rounded">📅 Predictive Recall Builder</Link>
+        <Link href="/map" className="block bg-gray-200 p-3 rounded">🌐 Code Map Visualizer</Link>
+        <Link href="/soap" className="block bg-gray-200 p-3 rounded">📄 SOAP Note Generator</Link>
       </div>
     </div>
   )
