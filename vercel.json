@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "framework": "nextjs",
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
@@ -13,5 +14,16 @@
       ]
     }
   ],
-  "routes": []
+  "redirects": [
+    {
+      "source": "https://www.revusystems.ca",
+      "destination": "https://revusystems.ca",
+      "permanent": true
+    },
+    {
+      "source": "https://www.revusystems.ca/(.*)",
+      "destination": "https://revusystems.ca/$1",
+      "permanent": true
+    }
+  ]
 }
