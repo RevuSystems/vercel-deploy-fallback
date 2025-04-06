@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "framework": "nextjs",
   "builds": [
     {
       "src": "package.json",
@@ -10,9 +7,20 @@
     }
   ],
   "routes": [
+    { 
+      "src": "/(.*)", 
+      "host": "www.revusystems.ca",
+      "status": 308,
+      "headers": { "Location": "https://revusystems.ca/$1" }
+    },
     {
       "src": "/(.*)",
       "dest": "/"
     }
-  ]
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "NEXT_PUBLIC_MODE": "production",
+    "NEXT_PUBLIC_API_URL": "https://revusystems.ca/api"
+  }
 }
