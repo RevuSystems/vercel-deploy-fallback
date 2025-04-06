@@ -4,15 +4,11 @@ module.exports = function Home() {
       padding: '4rem',
       fontFamily: 'sans-serif',
       textAlign: 'center',
-      backgroundColor: '#f9f9f9'
+      backgroundColor: '#fff'
     }}>
-      <h1>ReVu Systems</h1>
-      <p style={{ fontSize: '1.1rem', color: '#444' }}>
-        Advanced Dental Billing Intelligence Platform
-      </p>
-      <p style={{ marginTop: '2rem', fontStyle: 'italic', color: '#888' }}>
-        Deployment successful. Secure. Fast. Verified. No more loops.
-      </p>
+      <h1 style={{ fontSize: '2rem' }}>ReVu Systems</h1>
+      <p style={{ color: '#444' }}>Advanced Dental Billing Intelligence Platform</p>
+      <p style={{ marginTop: '2rem', color: '#888' }}>NO MORE FUCKING 'AUTHENTICATING...' EVER AGAIN.</p>
     </div>
   )
 }
