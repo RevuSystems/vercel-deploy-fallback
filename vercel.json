@@ -8,20 +8,16 @@
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }
   ],
-  "redirects": [
-    {
-      "source": "https://www.revusystems.ca",
-      "destination": "https://revusystems.ca",
-      "permanent": true
-    },
-    {
-      "source": "https://www.revusystems.ca/(.*)",
-      "destination": "https://revusystems.ca/$1",
-      "permanent": true
-    }
-  ]
+  "env": {
+    "NEXT_PUBLIC_BUILD_ID": "1743953879000",
+    "NEXT_PUBLIC_FAMILY_REVEAL_MODE": "true"
+  }
 }
