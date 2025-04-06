@@ -1,23 +1,17 @@
 {
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "no-store"
+          "value": "no-store, no-cache, must-revalidate, proxy-revalidate"
         }
       ]
     }
   ],
-  "redirects": [
-    {
-      "source": "/",
-      "has": [
-        { "type": "host", "value": "www.revusystems.ca" }
-      ],
-      "destination": "https://revusystems.ca",
-      "permanent": true
-    }
-  ]
+  "routes": []
 }
