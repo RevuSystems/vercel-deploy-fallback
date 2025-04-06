@@ -1,0 +1,39 @@
+{
+  "name": "revu-systems",
+  "version": "1.0.0",
+  "description": "ReVu Systems - AI-powered dental billing intelligence platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dental",
+    "billing",
+    "intelligence",
+    "AI"
+  ],
+  "author": "ReVu Systems",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^15.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@google-cloud/storage": "^7.16.0",
+    "@google/generative-ai": "^0.24.0",
+    "axios": "^1.8.4",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "googleapis": "^148.0.0",
+    "micro": "^10.0.1",
+    "morgan": "^1.10.0",
+    "stripe": "^18.0.0",
+    "swr": "^2.3.3",
+    "winston": "^3.17.0"
+  }
+}
