@@ -1,24 +1,9 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
-  ],
   "redirects": [
     {
       "source": "www.revusystems.ca",
       "destination": "https://revusystems.ca",
       "permanent": true
     }
-  ],
-  "env": {
-    "NODE_ENV": "production",
-    "NEXT_PUBLIC_MODE": "production",
-    "NEXT_PUBLIC_API_URL": "https://revusystems.ca/api"
-  }
+  ]
 }
